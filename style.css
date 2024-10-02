@@ -1,102 +1,137 @@
-*{
-   padding: 0;
-   margin: 0;
-   border: none;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 body{
-    background: #262525;
+  background:#FFFFFF;
+  width: 100vw;
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Adicionado para melhor alinhamento vertical */
-    color: black;
-    padding: 1rem; /* Adicionado para espaçamento interno */
-    background-color:#771e76; /* Adicionado para um fundo diferente */
-    width:96.9vw;
-
+.logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:row;
+  padding: 10px;
 }
-.navbar-title {
-  padding: 1em;
+
+.logo img{
+  width: 43px;
+  height: 40px;
+  margin: 10px;
+}
+
+.logo p{
+  font-family: "DM Sans", system-ui;
+  color: #FD6F00; 
+  font-weight: bold;  
+  margin: 10px;
+}
+
+.logo span{
+  font-family: "DM Sans", system-ui;
+  color: #171717;
+  font-weight: bold; 
 }
 
 .aling{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction:row;
+  padding: 10px;
 }
 
 
-
-.apresentacao{
-    padding: 10px;
-    margin: 15px;
-    width: 80vw;
-    height: 70vh;
-    background: #fff;
-
+.aling a{
+  font-family: "DM Sans", system-ui;
+  font-weight: bold; 
+  color: #171717;
+  margin: 10px;
+  text-decoration: none;
 }
 
 
-#Carrosel {
-    width: 100vw;
-    max-width:90vw;
-    position: relative;
-  }
-  
-  #conteudo {
-    overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  
-  #conteudo::-webkit-scrollbar {
-    height: 0;
-  }
-  
-  #prev,
-  #next {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: white;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-  }
-  
-  #prev {
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    display: none;
-  }
-  
-  #next {
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-  }
-  
-  #imgCarrosel {
-    display: grid;
-    grid-gap: 16px;
-    grid-auto-flow: column;
-    margin: auto;
-    box-sizing: border-box;
-  }
-  
-  .item {
-    width: 20vw;
-    height: 20vh;
-    background: green;
-  }
-  
+.btn button{
+  padding: 10px;
+  background: #FD6F00;
+  color: #FFFFFF;
+  font-family: "DM Sans", system-ui;
+  border-radius: 5px;
+  width: 8vw;
+}
+
+
+/* heard*/
+
+
+.alingdivicao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.alingHeard{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  margin:5vw;
+}
+
+
+.alingHeard p{
+  color: #171717;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.alingHeard h2{
+  color: #FD6F00;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+
+.alingText{
+  font-family: "DM Sans", system-ui;
+  font-size: 3vw;
+}
+
+.alingText2{
+  font-family: "DM Sans", system-ui;
+  font-size: 3vw;
+  margin-left: 15vw;
+}
+
+.btn2 button{
+  padding: 10px;
+  background: #FD6F00;
+  color: #FFFFFF;
+  font-family: "DM Sans", system-ui;
+  border-radius: 5px;
+  width: 8vw;
+  margin-top: 4vh;
+}
+
+.fontSection p{
+  font-size: 1.5vw;
+}
+
+.imgarea{
+
+}
+
+.imgarea img{
+  width: 30vw;
+  padding: 10px;
+  margin-right:5vw;
+
+}
