@@ -103,11 +103,13 @@ body{
 .alingText{
   font-family: "DM Sans", system-ui;
   font-size: 3vw;
+  margin-top: 1vh;
 }
 
 .alingText2{
   font-family: "DM Sans", system-ui;
   font-size: 3vw;
+  margin-top: -2vw;
   margin-left: 15vw;
 }
 
@@ -122,16 +124,12 @@ body{
 }
 
 .fontSection p{
+  font-family: "DM Sans", system-ui;
   font-size: 1.5vw;
-}
-
-.imgarea{
-
 }
 
 .imgarea img{
   width: 30vw;
   padding: 10px;
   margin-right:5vw;
-
 }
