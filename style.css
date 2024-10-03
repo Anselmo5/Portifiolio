@@ -77,6 +77,14 @@ body{
   flex-direction: row;
 }
 
+.alingdivicaosobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5vh;
+}
+
 .alingHeard{
   display: flex;
   align-items: stretch;
@@ -85,6 +93,12 @@ body{
   margin:5vw;
 }
 
+.alingcarrosel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .alingHeard p{
   color: #171717;
@@ -132,4 +146,153 @@ body{
   width: 30vw;
   padding: 10px;
   margin-right:5vw;
+}
+
+
+/* Sobre */
+.sobre h2{
+  font-family: "DM Sans", system-ui;
+  font-weight: bold;
+  font-size: 4vw;
+
+}
+
+.sobre p{
+  font-family: "DM Sans", system-ui;
+  font-size: 1vw;
+}
+
+/* barra de progesso */
+
+
+.softSkill li{
+  list-style: none;
+  margin: 20px 0px;
+  font-family: "DM Sans", system-ui;
+  font-size: 1vw;
+  font-weight: bold;
+} 
+
+.bar{
+  background:#EDECEC;
+  display: block;
+  width: 42vw;
+  height: 1.5vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
+  transition:  all 1s cubic-bezier(.25,.8,.25,.1);
+}
+
+
+.bar:hover{
+  box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: #FD6F00;
+}
+
+.Tr{
+ width:90%;
+ animation: Tr 3s;
+}
+
+
+.Ca{
+  width:90%;
+  animation: Tr 3s;
+ }
+
+
+.Vo{
+  width:90%;
+  animation: Tr 3s;
+ }
+
+
+ /* carrosel */
+
+.hardSkill h2{
+  font-family: "DM Sans", system-ui;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.hardSkill p{
+  font-family: "DM Sans", system-ui;
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+.carrosellCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 8vh;
+  padding: 10px;
+}
+
+
+.carousel-track-container {
+  overflow: hidden;
+  width:65vw; /* 300px * 3 para mostrar três slides */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 15vw; 
+  list-style: none;
+  text-align: center;
+  background:#f1f1f1;
+  padding: 5px;
+  margin: 5px;
+
+  border-radius: 14px;
+  height: 25vh;
+
+}
+
+.carousel-slide img {
+  width: 24px;
+  margin-right: 160px;
+  margin-top: 10px;
+  height: auto;
+}
+
+.carousel-slide h2{
+  font-family: "DM Sans", system-ui;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: left;
+}
+
+.carousel-slide p{
+  font-family: "DM Sans", system-ui;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 10vw;
+  margin: 5px;
+}
+
+.carrosellCard button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carrosellCard button:focus {
+  outline: none;
 }
