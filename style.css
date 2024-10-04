@@ -296,3 +296,40 @@ body{
 .carrosellCard button:focus {
   outline: none;
 }
+
+
+/* projetos */
+
+.alingProjetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin: 40px;
+}
+
+.TituloProjeto h2{
+  text-align: center;
+  font-family: "DM Sans", system-ui;
+  font-size: 4vw;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.TituloProjeto p{
+  text-align: center;
+  font-family: "DM Sans", system-ui;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.btnProjetos button{
+  padding: 10px;
+  background: #FD6F00;
+  color: #FFFFFF;
+  font-family: "DM Sans", system-ui;
+  border-radius: 5px;
+  width: 10vw;
+  margin-top: 4vh;
+}
