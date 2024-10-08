@@ -334,46 +334,43 @@ body{
   margin-top: 4vh;
 }
 
-
-
 .slidProjetos {
-  margin-top:10vh;
+  margin-top: 10vh;
   min-width: 700px;
   width: 70vw;
   height: 500px;
   border-radius: 12px;
   padding: 20px;
   padding-bottom: 40px;
-  box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+  box-shadow: 0 8px 48px 2px hsla(10, 6%, 15%, 0.4);
 
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
   position: relative;
   overflow: hidden;
-  background: hsl(0 0% 90%);
-
+  background: hsl(0, 0%, 90%);
   box-sizing: border-box;
 }
 
 .slid {
   position: absolute;
   top: 0;
-  left: 0;
-
-  width: inherit;
-  height: inherit;
+  left: 0; /* Começa do lado esquerdo do container */
+  width: 100%; /* Se ajusta ao tamanho do container */
+  height: 100%;
   transform-origin: left 50%;
-
+  
   background: inherit;
-
-  z-index: var(--z);
-  transition: .3s ease-out;
+  z-index: var(--z, 0); /* Z-index padrão */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0; /* Inicialmente invisível */
 }
 
 .slid img {
-  width: 100%;
+  width: 100%; /* A imagem ocupa todo o slide */
+  height: 100%; /* Ajusta a altura da imagem ao container */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
   -moz-user-select: none;
   user-select: none;
 }
@@ -383,13 +380,12 @@ body{
   top: 70%;
   left: 4%;
   transform: translateY(-50%);
-
   font-size: 2rem;
-  color: hsla(var(--h) var(--s) var(--l) / .8);
-  text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+  color: hsla(var(--h), var(--s), var(--l), 0.8);
+  text-shadow: 0 2px 10px hsla(var(--h), var(--s), 10%, 0.3);
 }
 
-.slidProjetos  input {
+.slidProjetos input {
   position: absolute;
   left: 0;
   top: 0;
@@ -402,32 +398,49 @@ body{
   height: 10px;
   margin-right: 4px;
   border-radius: 20px;
-
-  background: hsla(0 0% 90% / .3);
+  background: hsla(0, 0%, 90%, 0.3);
   cursor: pointer;
-
   position: relative;
   z-index: 10;
 }
+
 .slidProjetos label:last-child {
   margin-right: 0;
 }
 
-.slidProjetos  input:checked+label {
+/* Slide ativo (centralizado) */
+input:checked + label + .slid {
+  transform: translateX(0); /* Mantém o slide ativo no centro */
+  opacity: 1; /* Torna o slide visível */
+  z-index: 2; /* Garante que o slide ativo esteja acima dos outros */
+}
+
+/* Move os slides não ativos para fora da tela */
+input:not(:checked) + label + .slid {
+  transform: translateX(100%); /* Move para a direita */
+  opacity: 0; /* Mantém os slides não ativos invisíveis */
+  z-index: 1;
+}
+
+/* Animação de transição dos slides */
+input:checked + label + .slid ~ .slid {
+  transform: translateX(-100%); /* Move os slides para a esquerda ao passar para um novo slide */
+  opacity: 0; /* Mantém os slides não ativos invisíveis */
+  z-index: 1;
+}
+
+/* Desabilita a transição para os slides não selecionados */
+input:not(:checked) + label + .slid {
+  transition: 0; /* Desabilita a transição para os slides inativos */
+}
+
+/* Estilo para o label ativo */
+input:checked + label {
   background: linear-gradient(to right,
-    hsla(var(--hue) 80% 70% / .7),
-    hsla(calc(var(--hue) + 30) 80% 50% / .7));
+    hsla(var(--hue), 80%, 70%, 0.7),
+    hsla(calc(var(--hue) + 30), 80%, 50%, 0.7));
 }
 
-.slidProjetos  input:not(:checked)+label+.ci {
-  transform: translateX(-100%);
-  opacity: 0;
-}
 
-.slidProjetos  input:checked+label+.ci~.ci {
-  transform: translateX(100%);
-}
 
-.slidProjetos  input:not(:checked)+label+.ci {
-  transition: 0;
-}
+
