@@ -408,33 +408,29 @@ body{
   margin-right: 0;
 }
 
-/* Slide ativo (centralizado) */
 input:checked + label + .slid {
-  transform: translateX(0); /* Mantém o slide ativo no centro */
-  opacity: 1; /* Torna o slide visível */
-  z-index: 2; /* Garante que o slide ativo esteja acima dos outros */
+  transform: translateX(0); 
+  opacity: 1; 
+  z-index: 2; 
 }
 
-/* Move os slides não ativos para fora da tela */
+
 input:not(:checked) + label + .slid {
-  transform: translateX(100%); /* Move para a direita */
-  opacity: 0; /* Mantém os slides não ativos invisíveis */
+  transform: translateX(100%); 
+  opacity: 0; 
   z-index: 1;
 }
 
-/* Animação de transição dos slides */
 input:checked + label + .slid ~ .slid {
-  transform: translateX(-100%); /* Move os slides para a esquerda ao passar para um novo slide */
-  opacity: 0; /* Mantém os slides não ativos invisíveis */
+  transform: translateX(-100%); 
+  opacity: 0; 
   z-index: 1;
 }
 
-/* Desabilita a transição para os slides não selecionados */
 input:not(:checked) + label + .slid {
-  transition: 0; /* Desabilita a transição para os slides inativos */
+  transition: 0; 
 }
 
-/* Estilo para o label ativo */
 input:checked + label {
   background: linear-gradient(to right,
     hsla(var(--hue), 80%, 70%, 0.7),
@@ -442,5 +438,73 @@ input:checked + label {
 }
 
 
+/* Contato */
+
+.alingcontato{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15vh;
+  margin: 10vh;
+}
 
 
+.contato h2{
+  text-align: center;
+  font-family: "DM Sans", system-ui;
+  font-size: 4vw;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.contato p{
+  text-align: center;
+  font-family: "DM Sans", system-ui;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 5px;
+}
+
+
+.mensagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row ;
+  margin-top: 4vh;
+}
+
+.mensagem input{
+  padding: 10px;
+  width: 16vw;
+  margin: 5px;
+  color: #797979;
+  background:#F8F8F8;
+  font-family: "DM Sans", system-ui;
+  font-size: 0.9vw;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #AFAFAF;
+}
+
+.mensagem button{
+  padding: 10px;
+  width: 10vw;
+  background: #FD6F00;
+  font-family: "DM Sans", system-ui;
+  color: #FFFFFF;
+  font-size: 1vw;
+  border-radius: 2px;
+  font-weight: bold;
+
+}
+
+
+.enviomensagem textarea{
+  width: 50vw;
+  height: 20vh;
+  padding: 2vh;
+  margin-top: 5vh;
+  background: #e7e7e7;
+}
