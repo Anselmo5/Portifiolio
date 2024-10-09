@@ -513,7 +513,15 @@ input:checked + label {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+}
+
+.alinglogofooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerContainer img{
@@ -538,28 +546,27 @@ input:checked + label {
 }
 
 .alingLink{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F8F8F8;
-  width: 100%;
-  height: 30vh;
+  padding: 2vh;
 }
 
 
 .alingLink a{
-  margin: 12vh;
+  margin: 3vh;
   text-decoration: none;
   text-align: center;
   font-family: "DM Sans", system-ui;
   font-size: 1vw;
   font-weight: bold;
   color: #171717;
+  
 }
 .sectionFooter{
   background: #545454;
   height: 10vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionFooter span{
@@ -567,7 +574,6 @@ input:checked + label {
 }
 
 .sectionFooter h2{
-  text-align: center;
   font-family: "DM Sans", system-ui;
   font-size: 1vw;
   font-weight: bold;
