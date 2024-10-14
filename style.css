@@ -242,7 +242,7 @@ body{
 
 .carousel-track-container {
   overflow: hidden;
-  width:65vw; /* 300px * 3 para mostrar três slides */
+  width:50vw; 
 }
 
 .carousel-track {
@@ -251,7 +251,7 @@ body{
 }
 
 .carousel-slide {
-  min-width: 15vw; 
+  max-width: 60vw; 
   list-style: none;
   text-align: center;
   background:#f1f1f1;
@@ -336,7 +336,7 @@ body{
 
 .slidProjetos {
   margin-top: 10vh;
-  min-width: 700px;
+  min-width: 80vw;
   width: 70vw;
   height: 500px;
   border-radius: 12px;
@@ -438,9 +438,7 @@ input:not(:checked) + label + .slid {
 }
 
 input:checked + label {
-  background: linear-gradient(to right,
-    hsla(var(--hue), 80%, 70%, 0.7),
-    hsla(calc(var(--hue) + 30), 80%, 50%, 0.7));
+  background: #FD6F00;
 }
 
 
@@ -587,4 +585,44 @@ input:checked + label {
 }
 
 
+
+@media (max-width: 1071px) {
+  .btn button{
+    font-size: 1.1vw;
+    padding: 8px;
+  }
+
+  .btn2 button{
+    font-size: 1.1vw;
+    padding: 8px;
+  }
+
+  .aling a {
+    font-size: 1.5vw;
+  }
+
+  .btnProjetos button{
+    font-size: 1.2vw;
+    padding: 8px;
+  }
+  
+  .logo p{
+    font-size: 1.3vw;
+  }
+} 
+
+
+@media screen and (width: 425px) {
+  .aling a{
+    font-size: 0.8vw;
+  }
+
+  .btn button{
+    font-size:0.8vw;
+  }
+
+  .btn2 button{
+    font-size:0.8vw;
+  }
+}
 

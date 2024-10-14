@@ -7,21 +7,21 @@
         <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     </head>
     <body>
-        <nav>
+        <nav id="inicio">
             <div class="logo"> 
                 <img src="logo.png" alt="">
                 <p> <span>WEB</span> DEVELOP</p>
 
                 <div class="aling">
-                    <a href="">Incio</a>
-                    <a href="">Sobre Mim</a>
-                    <a href="">Tecnologias</a>
-                    <a href="">Projetos</a>
-                    <a href="">Contato</a>
+                    <a href="#inicio">Incio</a>
+                    <a href="#sobre">Sobre Mim</a>
+                    <a href="#tecnologia">Tecnologias</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato" >Contato</a>
                 </div>
 
                 <div class="btn">
-                    <button>Sobre Mim</button>
+                    <button id="irsobre">Sobre Mim</button>
                 </div>
             </div>    
         </nav>
@@ -50,7 +50,7 @@
                     </p>
         
                     <div class="btn2">
-                        <button>Sobre Mim</button>
+                        <button id="irsobre2">Sobre Mim</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
         </header>
 
 
-        <main>
+        <main id="sobre">
             <div class="alingdivicaosobre">
                 <div class="imgarea">
                     <img src="img.png" alt="">
@@ -108,7 +108,7 @@
 
         <section>
             <div class="alingcarrosel">
-                    <div class="hardSkill">
+                    <div class="hardSkill" id="tecnologia">
                             <h2>Tecnologias</h2>
                             <p>
                                 Essas Tecnologias são as que eu mais utilizei recentemente <br>
@@ -166,7 +166,7 @@
         </section>
 
 
-        <section>
+        <section> 
             <div class="alingProjetos">
                     <div class="TituloProjeto">
                             <h2>My Projects</h2>
@@ -176,7 +176,7 @@
                     <div class="btnProjetos">
                         <button> Meus Projetos</button>
                     </div>
-                    <div class="slidProjetos">
+                    <div class="slidProjetos" id="projetos">
                         <input type="radio" name="a" id="cr-1" checked>
                         <label for="cr-1" style="--hue: 32"></label>
                         <div class="slid" style="--z: 4">
@@ -208,7 +208,7 @@
             </div>/
         </section>
 
-        <section>
+        <section id="contato">
             <div class="alingcontato">
                     <div class="contato">
                         <h2>Fale Comigo</h2>
@@ -240,11 +240,11 @@
 
                     <div class="alingLink">
                         <div>
-                            <a href="">Incio</a>
-                            <a href="">Sobre Mim</a>
-                            <a href="">Tecnologias</a>
-                            <a href="">Projetos</a>
-                            <a href="">Contato</a>
+                            <a href="#inicio">Incio</a>
+                            <a href="#sobre">Sobre Mim</a>
+                            <a href="#tecnologia">Tecnologias</a>
+                            <a href="#projetos">Projetos</a>
+                            <a href="#contato">Contato</a>
                         </div>
                     </div>
         </div>
@@ -260,5 +260,7 @@
         </footer>
         
         <script src="script.js"></script>
+
+     
     </body>
     </html>
