@@ -593,36 +593,42 @@ input:checked + label {
   }
 
   .btn2 button{
-    font-size: 1.1vw;
+    font-size: 1.7vw;
     padding: 8px;
   }
 
   .aling a {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   .btnProjetos button{
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     padding: 8px;
   }
   
   .logo p{
     font-size: 1.3vw;
   }
+
+  .fontlink a{
+    font-size: 2vw;
+  }
 } 
 
 
 @media screen and (width: 425px) {
   .aling a{
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
 
   .btn button{
-    font-size:0.8vw;
+    font-size:1.5vw;
   }
 
   .btn2 button{
-    font-size:0.8vw;
+    font-size:1.5vw;
   }
+
+ 
 }
 
