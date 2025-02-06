@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WEB DEVELOP</title> <link rel="stylesheet" href="style.css">
+        <title>WEB DEVELOP</title> 
+        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
     </head>
     <body>
         <nav id="inicio">
@@ -13,15 +15,21 @@
                 <p> <span>WEB</span> DEVELOP</p>
 
                 <div class="aling">
-                    <a href="#inicio">Incio</a>
-                    <a href="#sobre">Sobre Mim</a>
-                    <a href="#tecnologia">Tecnologias</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato" >Contato</a>
+                    <button class="toggleSidebar" id="toggleSidebar">☰ Menu</button>
+                    <div class="sidebar" id="sidebar">
+                        <button id="closeSidebar" class="close-btn">✖</button> 
+                        <ul class="sidebar-menu">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre Mim</a></li>
+                            <li><a href="#tecnologia">Tecnologias</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li>   <a href="#contato">Contato</a></li>
+                        </ul>
+                   </div> 
                 </div>
 
                 <div class="btn">
-                    <button id="irsobre">Sobre Mim</button>
+                    <button id="irsobre">Sobre</button>
                 </div>
             </div>    
         </nav>
@@ -50,7 +58,7 @@
                     </p>
         
                     <div class="btn2">
-                        <button id="irsobre2">Sobre Mim</button>
+                        <button id="irsobre2">Sobre</button>
                     </div>
                 </div>
             </div>
@@ -180,32 +188,53 @@
                         <input type="radio" name="a" id="cr-1" checked>
                         <label for="cr-1" style="--hue: 32"></label>
                         <div class="slid" style="--z: 4">
-                        <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%">Pontação das Patrulhas - ADAD  <a href="https://adadsitio.netlify.app/" target="_blank"  class="slidlink"> Click Aqui</a></h2>
-                        <img src="Projeto1.png" alt="Imagem 1">
+                            <h2 class="ch" style="--h: 32; --s: 80%; --l: 90%"> ADAD BRASIL -   
+                                <a href="https://adadsitio.netlify.app/" target="_blank" class="slidlink">CLICK AQUI</a>
+                            </h2>
+                            <img src="Projeto1.png" alt="Imagem 1">
                         </div>
                     
                         <input type="radio" name="a" id="cr-2">
                         <label for="cr-2" style="--hue: 82"></label>
                         <div class="slid" style="--z: 3">
-                        <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%">Maravilhas da Mari - <a href="https://maravilias-da-mari.netlify.app/" target="_blank"  class="slidlink"> Click Aqui</a></h2>
-                        <img src="Projeto2.png" alt="Imagem 2">
+                            <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%">Maravilhas da Mari -  
+                                <a href="https://maravilias-da-mari.netlify.app/" target="_blank" class="slidlink">CLICK AQUI</a>
+                            </h2>
+                            <img src="Projeto2.png" alt="Imagem 2">
                         </div>
                     
                         <input type="radio" name="a" id="cr-3">
                         <label for="cr-3" style="--hue: 40"></label>
                         <div class="slid" style="--z: 2">
-                        <h2 class="ch" style="--h: 40; --s: 80%; --l: 90%">Analise Financeiro Repositorio -  <a href="https://github.com/Anselmo5/Analise-Financeira" target="_blank" class="slidlink"> Click Aqui</a></h2>
-                        <img src="Projeto3.png" alt="Imagem 3">
+                            <h2 class="ch" style="--h: 40; --s: 80%; --l: 90%">Análise Financeira -  
+                                <a href="https://luxury-halva-dc40a2.netlify.app/" target="_blank" class="slidlink">CLICK AQUI</a>
+                            </h2>
+                            <img src="Projeto3.png" alt="Imagem 3">
                         </div>
                     
                         <input type="radio" name="a" id="cr-4">
                         <label for="cr-4" style="--hue: 210"></label>
                         <div class="slid" style="--z: 1">
-                        <h2 class="ch" style="--h: 210; --s: 80%; --l: 90%"> <a href="https://github.com/Anselmo5/Ferias/tree/main/Projetos/Retomada/site-calculadora" target="_blank" class="slidlink" >Calccode</a></h2>
-                        <img src="Projeto4.png" alt="Imagem 4">
+                            <h2 class="ch" style="--h: 210; --s: 80%; --l: 90%"> 
+                                Calccode -  
+                                <a href="https://calccolde.netlify.app/" target="_blank" class="slidlink">CLICK AQUI</a>
+                            </h2>
+                            <img src="Projeto4.png" alt="Imagem 4">
+                        </div>
+                    
+                        <!-- Aqui está o erro original: o input do cr-5 estava DENTRO do slide do cr-4 -->
+                        
+                        <input type="radio" name="a" id="cr-5">
+                        <label for="cr-5" style="--hue: 250"></label>
+                        <div class="slid" style="--z: 0">
+                            <h2 class="ch" style="--h: 250; --s: 80%; --l: 90%"> 
+                                MiniBlog
+                                <a href="https://miniblogweb.netlify.app/" target="_blank" class="slidlink">CLICK AQUI</a>
+                            </h2>
+                            <img src="Projeto5.png" alt="Imagem 5">
                         </div>
                     </div>
-            </div>/
+                    
         </section>
 
         <section id="contato">
@@ -253,14 +282,14 @@
 
         
         <div class="sectionFooter">
-                <h2>© 2024 <span>Anselmo Henrique</span></h2>
+                <h2>© 2025 <span>Anselmo Henrique</span></h2>
 
         </div>
 
         </footer>
         
         <script src="script.js"></script>
-
+        
      
     </body>
     </html>

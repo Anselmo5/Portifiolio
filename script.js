@@ -72,3 +72,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   document.getElementById('irsobre2').addEventListener('click', function() {
     document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
   });
+
+
+  // Menu
+  const toggleButton = document.getElementById("toggleSidebar");
+  const closeButton = document.getElementById("closeSidebar");
+  const sidebar = document.getElementById("sidebar");
+  
+  toggleButton.addEventListener("click", function () {
+      sidebar.classList.add("open"); // Abre o sidebar
+  });
+  
+  closeButton.addEventListener("click", function () {
+      sidebar.classList.remove("open"); // Fecha o sidebar
+  });
+  

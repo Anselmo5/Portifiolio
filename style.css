@@ -1,634 +1,731 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  body{
+    background:#FFFFFF;
+    width: 100vw;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:row;
+    padding: 10px;
+  }
+
+  .logo img{
+    width: 43px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  .logo p{
+    font-family: "DM Sans", system-ui;
+    color: #FD6F00; 
+    font-weight: bold;  
+    margin: 10px;
+  }
+
+  .logo span{
+    font-family: "DM Sans", system-ui;
+    color: #171717;
+    font-weight: bold; 
+  }
+
+  .aling{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:row;
+    padding: 10px;
+  }
+
+
+  .aling a{
+    font-family: "DM Sans", system-ui;
+    font-weight: bold; 
+    color: #171717;
+    margin: 10px;
+    text-decoration: none;
+  }
 
 
-*{
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-body{
-  background:#FFFFFF;
-  width: 100vw;
-}
-
-.logo{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction:row;
-  padding: 10px;
-}
-
-.logo img{
-  width: 43px;
-  height: 40px;
-  margin: 10px;
-}
-
-.logo p{
-  font-family: "DM Sans", system-ui;
-  color: #FD6F00; 
-  font-weight: bold;  
-  margin: 10px;
-}
-
-.logo span{
-  font-family: "DM Sans", system-ui;
-  color: #171717;
-  font-weight: bold; 
-}
-
-.aling{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction:row;
-  padding: 10px;
-}
-
-
-.aling a{
-  font-family: "DM Sans", system-ui;
-  font-weight: bold; 
-  color: #171717;
-  margin: 10px;
-  text-decoration: none;
-}
-
-
-.btn button{
-  padding: 10px;
-  background: #FD6F00;
-  color: #FFFFFF;
-  font-family: "DM Sans", system-ui;
-  border-radius: 5px;
-  width: 8vw;
-}
-
-
-/* heard*/
-
-
-.alingdivicao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.alingdivicaosobre{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 5vh;
-}
-
-.alingHeard{
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
-  margin:5vw;
-}
-
-.alingcarrosel{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.alingHeard p{
-  color: #171717;
-  font-size: 1.5vw;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.alingHeard h2{
-  color: #FD6F00;
-  font-weight: bold;
-  font-size: 2.5vw;
-}
-
-
-.alingText{
-  font-family: "DM Sans", system-ui;
-  font-size: 3vw;
-  margin-top: 1vh;
-}
-
-.alingText2{
-  font-family: "DM Sans", system-ui;
-  font-size: 3vw;
-  margin-top: -2vw;
-  margin-left: 15vw;
-}
-
-.btn2 button{
-  padding: 10px;
-  background: #FD6F00;
-  color: #FFFFFF;
-  font-family: "DM Sans", system-ui;
-  border-radius: 5px;
-  width: 8vw;
-  margin-top: 4vh;
-}
-
-.fontSection p{
-  font-family: "DM Sans", system-ui;
-  font-size: 1.5vw;
-}
-
-.imgarea img{
-  width: 30vw;
-  padding: 10px;
-  margin-right:5vw;
-}
-
-
-/* Sobre */
-.sobre h2{
-  font-family: "DM Sans", system-ui;
-  font-weight: bold;
-  font-size: 4vw;
-
-}
-
-.sobre p{
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-}
-
-/* barra de progesso */
-
-
-.softSkill li{
-  list-style: none;
-  margin: 20px 0px;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-} 
-
-.bar{
-  background:#EDECEC;
-  display: block;
-  width: 42vw;
-  height: 1.5vh;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
-  transition:  all 1s cubic-bezier(.25,.8,.25,.1);
-}
-
-
-.bar:hover{
-  box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
-}
-
-.bar span{
-  height: 20px;
-  float: left;
-  background: #FD6F00;
-}
-
-.Tr{
- width:90%;
- animation: Tr 3s;
-}
-
-
-.Ca{
-  width:90%;
-  animation: Tr 3s;
- }
-
-
-.Vo{
-  width:90%;
-  animation: Tr 3s;
- }
-
-
- /* carrosel */
-
-.hardSkill h2{
-  font-family: "DM Sans", system-ui;
-  font-size: 4vw;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-}
-
-
-.hardSkill p{
-  font-family: "DM Sans", system-ui;
-  font-size: 1.1vw;
-  text-align: center;
-}
-
-.carrosellCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 8vh;
-  padding: 10px;
-}
-
-
-.carousel-track-container {
-  overflow: hidden;
-  width:50vw; 
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide {
-  max-width: 60vw; 
-  list-style: none;
-  text-align: center;
-  background:#f1f1f1;
-  padding: 5px;
-  margin: 5px;
-
-  border-radius: 14px;
-  height: 25vh;
-
-}
-
-.carousel-slide img {
-  width: 24px;
-  margin-right: 160px;
-  margin-top: 10px;
-  height: auto;
-}
-
-.carousel-slide h2{
-  font-family: "DM Sans", system-ui;
-  font-size: 1.5vw;
-  font-weight: bold;
-  text-align: left;
-}
-
-.carousel-slide p{
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-  text-align: left;
-  margin-right: 10vw;
-  margin: 5px;
-}
-
-.carrosellCard button {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.carrosellCard button:focus {
-  outline: none;
-}
-
-
-/* projetos */
-
-.alingProjetos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-  margin: 40px;
-}
-
-.TituloProjeto h2{
-  text-align: center;
-  font-family: "DM Sans", system-ui;
-  font-size: 4vw;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.TituloProjeto p{
-  text-align: center;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-}
-
-.btnProjetos button{
-  padding: 10px;
-  background: #FD6F00;
-  color: #FFFFFF;
-  font-family: "DM Sans", system-ui;
-  border-radius: 5px;
-  width: 10vw;
-  margin-top: 4vh;
-}
-
-.slidProjetos {
-  margin-top: 10vh;
-  min-width: 80vw;
-  width: 70vw;
-  height: 500px;
-  border-radius: 12px;
-  padding: 20px;
-  padding-bottom: 40px;
-  box-shadow: 0 8px 48px 2px hsla(10, 6%, 15%, 0.4);
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background: hsl(0, 0%, 90%);
-  box-sizing: border-box;
-}
-
-.slid {
-  position: absolute;
-  top: 0;
-  left: 0; /* Começa do lado esquerdo do container */
-  width: 100%; /* Se ajusta ao tamanho do container */
-  height: 100%;
-  transform-origin: left 50%;
-  
-  background: inherit;
-  z-index: var(--z, 0); /* Z-index padrão */
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0; /* Inicialmente invisível */
-}
-
-.slid img {
-  width: 100%; /* A imagem ocupa todo o slide */
-  height: 100%; /* Ajusta a altura da imagem ao container */
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.ch {
-  position: absolute;
-  top: 70%;
-  left: 4%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: hsla(var(--h), var(--s), var(--l), 0.8);
-  text-shadow: 0 2px 10px hsla(var(--h), var(--s), 10%, 0.3);
-}
-
-.slidlink{
-  text-decoration: none;
-  font-size: 2.5vw;
-  color: #EDECEC;
-}
-
-.slidProjetos input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  z-index: -10;
-}
-
-.slidProjetos label {
-  width: 10%;
-  height: 10px;
-  margin-right: 4px;
-  border-radius: 20px;
-  background: hsla(0, 0%, 90%, 0.3);
-  cursor: pointer;
-  position: relative;
-  z-index: 10;
-}
-
-.slidProjetos label:last-child {
-  margin-right: 0;
-}
-
-input:checked + label + .slid {
-  transform: translateX(0); 
-  opacity: 1; 
-  z-index: 2; 
-}
-
-
-input:not(:checked) + label + .slid {
-  transform: translateX(100%); 
-  opacity: 0; 
-  z-index: 1;
-}
-
-input:checked + label + .slid ~ .slid {
-  transform: translateX(-100%); 
-  opacity: 0; 
-  z-index: 1;
-}
-
-input:not(:checked) + label + .slid {
-  transition: 0; 
-}
-
-input:checked + label {
-  background: #FD6F00;
-}
-
-
-/* Contato */
-
-.alingcontato{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 15vh;
-  margin: 10vh;
-}
-
-
-.contato h2{
-  text-align: center;
-  font-family: "DM Sans", system-ui;
-  font-size: 4vw;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.contato p{
-  text-align: center;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-  margin: 5px;
-}
-
-
-.mensagem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row ;
-  margin-top: 4vh;
-}
-
-.mensagem input{
-  padding: 10px;
-  width: 16vw;
-  margin: 5px;
-  color: #797979;
-  background:#F8F8F8;
-  font-family: "DM Sans", system-ui;
-  font-size: 0.9vw;
-  border-radius: 5px;
-  font-weight: bold;
-  border: 1px solid #AFAFAF;
-}
-
-.mensagem button{
-  padding: 10px;
-  width: 10vw;
-  background: #FD6F00;
-  font-family: "DM Sans", system-ui;
-  color: #FFFFFF;
-  font-size: 1vw;
-  border-radius: 2px;
-  font-weight: bold;
-
-}
-
-.enviomensagem textarea{
-  width: 50vw;
-  height: 20vh;
-  padding: 2vh;
-  margin-top: 5vh;
-  background: #e7e7e7;
-}
-
-.footerContainer{
-  background: #F8F8F8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 40vh;
-}
-
-.alinglogofooter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footerContainer img{
-  width: 2.5vw;
-  margin: 2vh;
-  margin-top: 4vh;
-}
-
-.footerContainer span{
-  margin-top: 2vh;
-  color: #171717;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  margin: 0.4vw;
-}
-
-.footerContainer h2{
-  margin-top: 2vh;
-  color: #FD6F00;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-}
-
-.alingLink{
-  padding: 2vh;
-}
-
-
-.alingLink a{
-  margin: 3vh;
-  text-decoration: none;
-  text-align: center;
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-  color: #171717;
-  
-}
-.sectionFooter{
-  background: #545454;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sectionFooter span{
-  color: #FD6F00;
-}
-
-.sectionFooter h2{
-  font-family: "DM Sans", system-ui;
-  font-size: 1vw;
-  font-weight: bold;
-  color: #F8F8F8;
-}
-
-
-
-@media (max-width: 1071px) {
   .btn button{
-    font-size: 1.1vw;
-    padding: 8px;
+    padding: 10px;
+    background: #FD6F00;
+    color: #FFFFFF;
+    font-family: "DM Sans", system-ui;
+    border-radius: 5px;
+    width: 8vw;
+  }
+
+
+  /* heard*/
+
+
+  .alingdivicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .alingdivicaosobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5vh;
+  }
+
+  .alingHeard{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin:5vw;
+  }
+
+  .alingcarrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .alingHeard p{
+    color: #171717;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .alingHeard h2{
+    color: #FD6F00;
+    font-weight: bold;
+    font-size: 2.5vw;
+  }
+
+
+  .alingText{
+    font-family: "DM Sans", system-ui;
+    font-size: 3vw;
+    margin-top: 1vh;
+  }
+
+  .alingText2{
+    font-family: "DM Sans", system-ui;
+    font-size: 3vw;
+    margin-top: -2vw;
+    margin-left: 15vw;
   }
 
   .btn2 button{
-    font-size: 1.7vw;
-    padding: 8px;
+    padding: 10px;
+    background: #FD6F00;
+    color: #FFFFFF;
+    font-family: "DM Sans", system-ui;
+    border-radius: 5px;
+    width: 8vw;
+    margin-top: 4vh;
   }
 
-  .aling a {
-    font-size: 2vw;
+  .fontSection p{
+    font-family: "DM Sans", system-ui;
+    font-size: 1.5vw;
   }
 
-  .btnProjetos button{
-    font-size: 1.7vw;
-    padding: 8px;
-  }
-  
-  .logo p{
-    font-size: 1.3vw;
+  .imgarea img{
+    width: 30vw;
+    padding: 10px;
+    margin-right:5vw;
   }
 
-  .fontlink a{
-    font-size: 2vw;
+
+  /* Sobre */
+  .sobre h2{
+    font-family: "DM Sans", system-ui;
+    font-weight: bold;
+    font-size: 4vw;
+
   }
-} 
 
-
-@media screen and (width: 425px) {
-  .aling a{
+  .sobre p{
+    font-family: "DM Sans", system-ui;
     font-size: 1vw;
   }
 
-  .btn button{
-    font-size:1.5vw;
+  /* barra de progesso */
+
+
+  .softSkill li{
+    list-style: none;
+    margin: 20px 0px;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+  } 
+
+  .bar{
+    background:#EDECEC;
+    display: block;
+    width: 42vw;
+    height: 1.5vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
+    transition:  all 1s cubic-bezier(.25,.8,.25,.1);
   }
 
-  .btn2 button{
-    font-size:1.5vw;
+
+  .bar:hover{
+    box-shadow: 0px 1px 3px #171717 0px 1px 2px #171717;
   }
+
+  .bar span{
+    height: 20px;
+    float: left;
+    background: #FD6F00;
+  }
+
+  .Tr{
+  width:90%;
+  animation: Tr 3s;
+  }
+
+
+  .Ca{
+    width:90%;
+    animation: Tr 3s;
+  }
+
+
+  .Vo{
+    width:90%;
+    animation: Tr 3s;
+  }
+
+
+  /* carrosel */
+
+  .hardSkill h2{
+    font-family: "DM Sans", system-ui;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+  .hardSkill p{
+    font-family: "DM Sans", system-ui;
+    font-size: 1.1vw;
+    text-align: center;
+  }
+
+  .carrosellCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 8vh;
+    padding: 10px;
+  }
+
+
+  .carousel-track-container {
+    overflow: hidden;
+    width:50vw; 
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .carousel-slide {
+    max-width: 60vw; 
+    list-style: none;
+    text-align: center;
+    background:#f1f1f1;
+    padding: 5px;
+    margin: 5px;
+
+    border-radius: 14px;
+    height: 25vh;
+
+  }
+
+  .carousel-slide img {
+    width: 24px;
+    margin-right: 160px;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .carousel-slide h2{
+    font-family: "DM Sans", system-ui;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .carousel-slide p{
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 10vw;
+    margin: 5px;
+  }
+
+  .carrosellCard button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .carrosellCard button:focus {
+    outline: none;
+  }
+
+
+  /* projetos */
+
+  .alingProjetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin: 40px;
+  }
+
+  .TituloProjeto h2{
+    text-align: center;
+    font-family: "DM Sans", system-ui;
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .TituloProjeto p{
+    text-align: center;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+
+  .btnProjetos button{
+    padding: 10px;
+    background: #FD6F00;
+    color: #FFFFFF;
+    font-family: "DM Sans", system-ui;
+    border-radius: 5px;
+    width: 10vw;
+    margin-top: 4vh;
+  }
+
+  .slidProjetos {
+    margin-top: 10vh;
+    min-width: 80vw;
+    width: 70vw;
+    height: 500px;
+    border-radius: 12px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 8px 48px 2px hsla(10, 6%, 15%, 0.4);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: hsl(0, 0%, 90%);
+    box-sizing: border-box;
+  }
+
+  .slid {
+    position: absolute;
+    top: 0;
+    left: 0; /* Começa do lado esquerdo do container */
+    width: 100%; /* Se ajusta ao tamanho do container */
+    height: 100%;
+    transform-origin: left 50%;
+    
+    background: inherit;
+    z-index: var(--z, 0); /* Z-index padrão */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0; /* Inicialmente invisível */
+  }
+
+  .slid img {
+    width: 100%; /* A imagem ocupa todo o slide */
+    height: 100%; /* Ajusta a altura da imagem ao container */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .ch {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color:#FD6F00;
+  }
+
+
+
+  .slidlink{
+    text-decoration: none;
+    font-size: 1em;
+    color: #545454;
+  }
+
+  .slidProjetos input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+  }
+
+  .slidProjetos label {
+    width: 10%;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 20px;
+    background: hsla(0, 0%, 90%, 0.3);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .slidProjetos label:last-child {
+    margin-right: 0;
+  }
+
+  input:checked + label + .slid {
+    transform: translateX(0); 
+    opacity: 1; 
+    z-index: 2; 
+  }
+
+
+  input:not(:checked) + label + .slid {
+    transform: translateX(100%); 
+    opacity: 0; 
+    z-index: 1;
+  }
+
+  input:checked + label + .slid ~ .slid {
+    transform: translateX(-100%); 
+    opacity: 0; 
+    z-index: 1;
+  }
+
+  input:not(:checked) + label + .slid {
+    transition: 0; 
+  }
+
+  input:checked + label {
+    background: #FD6F00;
+  }
+
+
+  /* Contato */
+
+  .alingcontato{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    margin: 10vh;
+  }
+
+
+  .contato h2{
+    text-align: center;
+    font-family: "DM Sans", system-ui;
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .contato p{
+    text-align: center;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+
+  .mensagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row ;
+    margin-top: 4vh;
+  }
+
+  .mensagem input{
+    padding: 10px;
+    width: 16vw;
+    margin: 5px;
+    color: #797979;
+    background:#F8F8F8;
+    font-family: "DM Sans", system-ui;
+    font-size: 0.9vw;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #AFAFAF;
+  }
+
+  .mensagem button{
+    padding: 10px;
+    width: 10vw;
+    background: #FD6F00;
+    font-family: "DM Sans", system-ui;
+    color: #FFFFFF;
+    font-size: 1vw;
+    border-radius: 2px;
+    font-weight: bold;
+
+  }
+
+  .enviomensagem textarea{
+    width: 50vw;
+    height: 20vh;
+    padding: 2vh;
+    margin-top: 5vh;
+    background: #e7e7e7;
+  }
+
+  .footerContainer{
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .alinglogofooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerContainer img{
+    width: 2.5vw;
+    margin: 2vh;
+    margin-top: 4vh;
+  }
+
+  .footerContainer span{
+    margin-top: 2vh;
+    color: #171717;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    margin: 0.4vw;
+  }
+
+  .footerContainer h2{
+    margin-top: 2vh;
+    color: #FD6F00;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+  }
+
+  .alingLink{
+    padding: 2vh;
+  }
+
+
+  .alingLink a{
+    margin: 3vh;
+    text-decoration: none;
+    text-align: center;
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #171717;
+    
+  }
+  .sectionFooter{
+    background: #545454;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionFooter span{
+    color: #FD6F00;
+  }
+
+  .sectionFooter h2{
+    font-family: "DM Sans", system-ui;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #F8F8F8;
+  }
+
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color:#FD6F00;
+  color: white;
+  transition: 0.3s ease;
+  padding-top: 60px;
+  z-index: 11;
+}
+
+.sidebar.open {
+  left: 0; /* Quando aberto, o menu se move para a esquerda */
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 8px 16px;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #fff;
+  padding: 8px;
+  color: #FD6F00;
+}
+
+.open-btn {
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.toggleSidebar{
+  padding: 8px;
+  font-size: 0.8em;
+  border-radius:5px;
+}
+
+
+  /* Responsividade */
+
+  @media (max-width: 1071px) {
+    .btn button{
+      font-size: 1.1vw;
+      padding: 8px;
+    }
+
+    .btn2 button{
+      font-size: 1.2vw;
+      padding: 8px;
+    }
+
+    .aling a {
+      font-size: 2vw;
+    }
+
+    .btnProjetos button{
+      font-size: 1.7vw;
+      padding: 8px;
+    }
+    
+    .logo p{
+      font-size: 1.3vw;
+    }
+
+    .fontlink a{
+      font-size: 2vw;
+    }
+  } 
+
+
+
+  @media (max-width: 950px) {
+
+    .btn button{
+      font-size: 0.45em;
+    }
+
+    .btn2 button{
+      font-size: 0.5em;
+      padding: 8px;
+    }
+
+    .toggleSidebar{
+      font-size: 0.7em;
+    }
+    .carrosellCard button{
+      font-size: 1.5em;
+    }
+ 
+    .logo p{
+      font-size: 0.5em;
+    }
+
+  } 
+
+  @media (max-width: 650px) {
+
+    .btn button{
+      font-size: 0.4em;
+      width: 12vw;
+      padding: 8px;
+    }
+
+    .btn2 button{
+      width: 12vw;
+    }
+
+    .toggleSidebar{
+      font-size:0.6em;
+    }
+
+    .fontlink a{
+      font-size: 1.5vw;
+    }
 
  
-}
+  } 
+
+
 
