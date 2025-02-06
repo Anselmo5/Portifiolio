@@ -729,3 +729,10 @@
 
 
 
+  @media (max-width: 450px) {
+    .fontlink a{
+      font-size: 1vw;
+    }
+
+ 
+  } 
